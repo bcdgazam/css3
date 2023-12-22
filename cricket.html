@@ -5,17 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket bat and ball</title>
     <style>
-        .bat{
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            border-radius: 50%;
+            position: relative;
+            left: 779px;
+            top: -400px;
+            transition: transform 2s ease-in-out 0.3s;
+        }
 
+        .field:hover .ball{
+            transform: translate(900px, -200px);
+        }
+
+        .bat{
+            transition: transform .2s ease-in-out ;
         }
         .bat:hover{
             transform: rotate(-60deg);
+            transform-origin: 100% 0;
         }
     </style>
 </head>
 <body>
     <div class="field">
         <img class="bat" src="img/bat.png" alt="">
+        <div class="ball">
+
+        </div>
     </div>
 </body>
 </html>
